@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo-finaldef.jpg">
+    <title>HTML & CSS Resources</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            z-index: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #2e8bc0, #1e1e2f);
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+           
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+        }
+        nav {
+            top: 0% ;
+            display: flex;
+            justify-content: center;
+            background: #1b1b1b;
+            padding: 1rem;
+            position: sticky;
+            z-index: 1;
+           
+        }
+        nav a {
+            color: #ffd700;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            
+            
+        }
+        nav a:hover {
+            background: rgba(255, 215, 0, 0.6);
+            border-radius: 5px;
+            transition: 0.3s;
+            transform: scale(1.1);
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            width: 100%;
+        }
+        section {
+            width: 90%;
+            max-width: 1000px;
+            background: #1e1e1e;
+            padding: 2.5rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+        h2 {
+            color: #ffd700;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.1rem;
+            
+        }
+        footer {
+            text-align: center;
+            padding: 1.8rem;
+            background: #1b1b1b;
+            color: #ffd700;
+            font-size: 1rem;
+        }
+        .Image-link {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-content: center;
+        }
+        .Image-link img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .Image-link img:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px dotted #ffcc00;
+        }
+        b {
+            color: #ac9c43;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo-finaldef.jpg" alt="Our Logo">
+        <h1>HTML & CSS Resources</h1>
+        <p>Your ultimate guide to mastering HTML, CSS, and web development</p>
+    </header>
+    <nav>
+        <a href="index.html">&#127968; Home</a>
+        <a href="aboutUS.html">&#128101; About Us</a>
+        <a href="blog.html">&#128221; Blog</a>
+        <a href="resources.html">&#128736; Resources</a>
+        <a href="contact.html">&#128233; Contact</a>
+    </nav>
+
+    <main>
+        <section class="Image-link">
+            <h2>Click the sections in the image to explore resources</h2>
+            <a href="https://htmlcolorcodes.com/" target="_blank">
+                <img src="color-codes.png" width="200px" alt="Color Codes">
+            </a>
+            <a href="https://www.w3schools.com/html/html_css.asp" target="_blank">
+                <img src="w3schools.png" width="390px" alt="W3Schools HTML & CSS">
+            </a>
+        </section>
+        
+        <section id="tutorials">
+            <h2>HTML & CSS Tutorials</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial - W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Guide - MDN</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">CSS Tutorial - W3Schools</a></li>
+            </ul>
+        </section>
+        
+        <section id="study">
+            <h2>Study Tips</h2>
+            <p>Check out these study tips to improve your learning:</p>
+            <ul>
+                <li><b>Practice coding daily</b> – Consistency is key! Even 30 minutes a day can make a big difference.</li>
+                <li> <b>Work on small projects</b> – Applying what you learn through real projects helps reinforce concepts.</li>
+                <li><b>Join online coding communities</b> – Engage in discussions, ask questions, and learn from others.</li>
+                <li><b>Read and analyze code – Study well</b>-written code from open-source projects to improve your understanding.</li>
+                <li><b>Break down problems</b> – Solve complex problems step by step to strengthen your problem-solving skills.</li>
+                <li><b>Use coding challenges</b> – Platforms like <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> help sharpen your logic.</li>
+                <li><b>Take notes</b> – Writing down key concepts helps with retention and future reference.</li>
+                <li><b>Teach what you learn </b>– Explaining concepts to others enhances your understanding.</li>
+                <li><b>Stay curious and explore</b> – Experiment with new technologies, frameworks, and tools to stay updated.</li>
+            </ul>
+            <p>Keep coding, stay motivated, and enjoy the journey!</p>
+        </section>
+        
+        <section id="career">
+            <h2>Career Advice</h2>
+            <p>Explore this career advice for a successful future.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nogh434ykF0?si=97Mw07oBvyvCyp_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+        </section>
+       
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 HTML & CSS Resource Hub | Learn and Grow </p>
+    </footer>
+</body>
+</html>
